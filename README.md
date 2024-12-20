@@ -39,13 +39,6 @@ The application is running on [localhost:5111](http://localhost:5111).
  
 ------------------------------------------------------------------------------------------------------------------------------
 
-```sh
-1. git clone https://github.com/devpardeepkumar/soar-test.git
-2. cd soar-test
-3. create .env file and update the variables
-4. npm install
-5. node app.js
-```
 
 # API Endpoints
 
