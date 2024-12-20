@@ -47,3 +47,7 @@ The application is running on [localhost:5111](http://localhost:5111).
 | `http://localhost:5111/api/students/getStudentById`           | POST                 | ```{id} ```|
 | `http://localhost:5111/api/students/deleteStudent`           | POST                 | ```{id} ```|
 | `http://localhost:5111/api/students/getAllStudents`           | POST                 | ```{page=1, limit=10, search, schoolid, classid} ```|
+
+
+
+
