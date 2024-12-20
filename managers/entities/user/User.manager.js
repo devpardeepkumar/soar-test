@@ -16,7 +16,7 @@ module.exports = class User {
     this.mongomodels = mongomodels;
     this.tokenManager = managers.token;
     this.usersCollection = this.mongomodels.User;
-    this.httpExposed = ["createUser"];
+    this.httpExposed = ["createUser","checkingdevops"];
   }
   async createUser({ username, email, password,role,scopes=[] }) {
     const user = { username, email, password };
@@ -52,7 +52,15 @@ module.exports = class User {
       longToken,
     };
   }
+  async checkingdevops() {
+    return {
+      user: 'newUser',
+      message:'testing API',
+    };
+  }
 };
+
+
 
 
     // "pardeep": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzY1M2NjYjA3ZjJiZDUyMGMzN2MwZWYiLCJyb2xlIjoiYWRtaW4iLCJzY29wZXMiOlsiYWRtaW4iXSwiaWF0IjoxNzM0Njg3OTQ3LCJleHAiOjE4MjkzNjA3NDd9.WVtzjj5RqvRI5XzucYXRzljkH77Q0GOQPGX9De1u_18"
