@@ -19,7 +19,7 @@ const OYSTER_PREFIX                    = process.env.OYSTER_PREFIX || 'none';
 const CACHE_REDIS                      = process.env.CACHE_REDIS || REDIS_URI;
 const CACHE_PREFIX                     = process.env.CACHE_PREFIX || `${SERVICE_NAME}:ch`;
 
-const MONGO_URI                        = process.env.MONGO_URI || `mongodb://localhost:27017/${SERVICE_NAME}`;
+const MONGO_URI                        = process.env.MONGO_URI || `mongodb+srv://devpardeepkumar60:aCKOrqZKqpxhFLX3@cluster0.5apyl.mongodb.net/soar`;
 const config                           = require(`./envs/${ENV}.js`);
 const LONG_TOKEN_SECRET                = process.env.LONG_TOKEN_SECRET || null;
 const SHORT_TOKEN_SECRET               = process.env.SHORT_TOKEN_SECRET || null;
