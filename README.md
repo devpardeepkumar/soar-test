@@ -36,6 +36,7 @@ The application is running on [localhost:5111](http://localhost:5111).
 
 ### For staff
  ```{ username, email, password, role=[school-administrator], scopes=["school_read","student_read"]} ```
+ 
 ------------------------------------------------------------------------------------------------------------------------------
 
 ```sh
