@@ -26,6 +26,24 @@ You need to write the following commands on the terminal screen so that you can 
 
 The application is running on [localhost:5111](http://localhost:5111).
 
+# Create the user first using createUser API
+
+### For admin user
+ ```{ username, email, password, role=[admin], scopes=["admin"]} ```
+ 
+### For school-administrator
+ ```{ username, email, password, role=[school-administrator], scopes=["school_read","school_write","class_read","class_write","student_read","student_write"]} ```
+
+### For staff
+ ```{ username, email, password, role=[school-administrator], scopes=["school_read","student_read"]} ```
+
+```sh
+1. git clone https://github.com/devpardeepkumar/soar-test.git
+2. cd soar-test
+3. create .env file and update the variables
+4. npm install
+5. node app.js
+
 
 # API Endpoints
 
