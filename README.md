@@ -43,7 +43,7 @@ The application is running on [localhost:5111](http://localhost:5111).
 3. create .env file and update the variables
 4. npm install
 5. node app.js
-
+```
 
 # API Endpoints
 
