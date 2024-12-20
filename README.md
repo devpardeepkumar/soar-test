@@ -26,7 +26,7 @@ You need to write the following commands on the terminal screen so that you can 
 
 The application is running on [localhost:5111](http://localhost:5111).
 
-# Create the user first using createUser API
+# Create the user first by using createUser API
 
 ### For admin user
  ```{ username, email, password, role=[admin], scopes=["admin"]} ```
@@ -49,19 +49,19 @@ The application is running on [localhost:5111](http://localhost:5111).
 
 | Path | Method | Payload 
 | ------------------------------------------------------ | -------------------- |-----------------------------------|
-| `http://localhost:5111/api/users/createUser`           | POST                 | ```{ username, email, password, role=[admin,school-administrator,staff], scopes=["school_read","school_write","class_read","class_write","student_read","student_write"]} ```
-| `http://localhost:5111/api/schools/createSchool`           | POST                 | ```{ name, address, email, shortDesc, longDesc, website, phone} ```|
-| `http://localhost:5111/api/schools/updateSchool`           | POST                 | ```{id, name, address, email, shortDesc, longDesc, website, phone} ```|
-| `http://localhost:5111/api/schools/deleteSchool`           | POST                 | ```{id} ```|
-| `http://localhost:5111/api/schools/getSchoolById`           | POST                 | ```{id} ```|
-| `http://localhost:5111/api/schools/getAllSchool`           | POST                 | ```{page=1, limit=10, search} ```|
-| `http://localhost:5111/api/classrooms/createClass`           | POST                 | ```{schoolid, capacity, resources, name} ```|
-| `http://localhost:5111/api/classrooms/updateClass`           | POST                 | ```{id, schoolid, capacity, resources, name} ```|
-| `http://localhost:5111/api/classrooms/getClassById`           | POST                 | ```{id} ```|
-| `http://localhost:5111/api/classrooms/deleteClass`           | POST                 | ```{id} ```|
-| `http://localhost:5111/api/classrooms/getAllClassess`           | POST                 | ```{page=1, limit=10, search, schoolid} ```|
-| `http://localhost:5111/api/students/createStudents`           | POST                 | ```{schoolid, name, lastname, email, dateofbirth, gender, enrollmentdate, classid } ```|
-| `http://localhost:5111/api/students/updateStudent`           | POST                 | ```{id, schoolid, name, lastname, email, dateofbirth, gender, enrollmentdate, classid} ```|
-| `http://localhost:5111/api/students/getStudentById`           | POST                 | ```{id} ```|
-| `http://localhost:5111/api/students/deleteStudent`           | POST                 | ```{id} ```|
-| `http://localhost:5111/api/students/getAllStudents`           | POST                 | ```{page=1, limit=10, search, schoolid, classid} ```|
+| `https://soar-test-wcu3.onrender.com/api/users/createUser`           | POST                 | ```{ username, email, password, role=[admin,school-administrator,staff], scopes=["school_read","school_write","class_read","class_write","student_read","student_write"]} ```
+| `https://soar-test-wcu3.onrender.com/api/schools/createSchool`           | POST                 | ```{ name, address, email, shortDesc, longDesc, website, phone} ```|
+| `https://soar-test-wcu3.onrender.com/api/schools/updateSchool`           | POST                 | ```{id, name, address, email, shortDesc, longDesc, website, phone} ```|
+| `https://soar-test-wcu3.onrender.com/api/schools/deleteSchool`           | POST                 | ```{id} ```|
+| `https://soar-test-wcu3.onrender.com/api/schools/getSchoolById`           | POST                 | ```{id} ```|
+| `https://soar-test-wcu3.onrender.com/api/schools/getAllSchool`           | POST                 | ```{page=1, limit=10, search} ```|
+| `https://soar-test-wcu3.onrender.com/api/classrooms/createClass`           | POST                 | ```{schoolid, capacity, resources, name} ```|
+| `https://soar-test-wcu3.onrender.com/api/classrooms/updateClass`           | POST                 | ```{id, schoolid, capacity, resources, name} ```|
+| `https://soar-test-wcu3.onrender.com/api/classrooms/getClassById`           | POST                 | ```{id} ```|
+| `https://soar-test-wcu3.onrender.com/api/classrooms/deleteClass`           | POST                 | ```{id} ```|
+| `https://soar-test-wcu3.onrender.com/api/classrooms/getAllClassess`           | POST                 | ```{page=1, limit=10, search, schoolid} ```|
+| `https://soar-test-wcu3.onrender.com/api/students/createStudents`           | POST                 | ```{schoolid, name, lastname, email, dateofbirth, gender, enrollmentdate, classid } ```|
+| `https://soar-test-wcu3.onrender.com/api/students/updateStudent`           | POST                 | ```{id, schoolid, name, lastname, email, dateofbirth, gender, enrollmentdate, classid} ```|
+| `https://soar-test-wcu3.onrender.com/api/students/getStudentById`           | POST                 | ```{id} ```|
+| `https://soar-test-wcu3.onrender.com/api/students/deleteStudent`           | POST                 | ```{id} ```|
+| `https://soar-test-wcu3.onrender.com/api/students/getAllStudents`           | POST                 | ```{page=1, limit=10, search, schoolid, classid} ```|
